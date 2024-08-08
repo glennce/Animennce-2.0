@@ -18,37 +18,49 @@ navLinkEls.forEach(navLinkEl => {
 });
 
 
-const buttonOne = document.querySelector('.button-one');
-const buttonTwo = document.querySelector('.button-two');
-const buttonThree = document.querySelector('.button-three');
-const buttonFour = document.querySelector('.button-four');
+let buttonOne = document.querySelector('.next');
+let buttonTwo = document.querySelector('.prev');
 
-const sectionone = document.getElementById('section-one');
-const sectiontwo = document.getElementById('section-two');
-const sectionthree = document.getElementById('section-three');
-const sectionfour = document.getElementById('section-four');
+buttonOne.addEventListener('click', function(){
+    let sections = document.querySelectorAll('.section-spring');
+    document.querySelector('.spring-section').appendChild(sections[0]);
+})
+buttonTwo.addEventListener('click', function(){
+    let sections = document.querySelectorAll('.section-spring');
+    document.querySelector('.spring-section').prepend(sections[sections.length - 1]);
+})
+buttonOne.addEventListener('click', function(){
+    let sections = document.querySelectorAll('.section-summer');
+    document.querySelector('.summer-section').appendChild(sections[0]);
+})
+buttonTwo.addEventListener('click', function(){
+    let sections = document.querySelectorAll('.section-summer');
+    document.querySelector('.summer-section').prepend(sections[sections.length - 1]);
+})
 
-buttonOne.addEventListener('click', function() {
-    sectionone.style.display = 'grid';
-    sectiontwo.style.display = 'none';
-    sectionthree.style.display = 'none';
-    sectionfour.style.display = 'none';
+let springButton = document.querySelector('.spring');
+let sidespringButton = document.querySelector('.side-spring-button');
+let sidesummerButton = document.querySelector('.side-summer-button');
+let sidefallButton = document.querySelector('.side-fall-button');
+let sidewinterButton = document.querySelector('.side-winter-button');
+let springSection = document.querySelector('.spring-section');
+let summerButton = document.querySelector('.summer');
+let summerSection = document.querySelector('.summer-section');
+
+springButton.addEventListener('click', function(){
+    summerSection.style.display = 'none';
+    springSection.style.display = 'block';
 })
-buttonTwo.addEventListener('click', function() {
-    sectionone.style.display = 'none';
-    sectiontwo.style.display = 'grid';
-    sectionthree.style.display = 'none';
-    sectionfour.style.display = 'none';
+sidespringButton.addEventListener('click', function(){
+    summerSection.style.display = 'none';
+    springSection.style.display = 'block';
 })
-buttonThree.addEventListener('click', function() {
-    sectionone.style.display = 'none';
-    sectiontwo.style.display = 'none';
-    sectionthree.style.display = 'grid';
-    sectionfour.style.display = 'none';
+
+summerButton.addEventListener('click', function(){
+    summerSection.style.display = 'block';
+    springSection.style.display = 'none';
 })
-buttonFour.addEventListener('click', function() {
-    sectionone.style.display = 'none';
-    sectiontwo.style.display = 'none';
-    sectionthree.style.display = 'none';
-    sectionfour.style.display = 'grid';
+sidesummerButton.addEventListener('click', function(){
+    summerSection.style.display = 'block';
+    springSection.style.display = 'none';
 })
