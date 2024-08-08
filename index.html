@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
     <header class="main-header">
@@ -26,8 +27,22 @@
                         <li><a href="#">fantasy</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Types</a></li>
-                <li><a href="#">Seasonal</a></li>
+                <li><a href="#">Types</a>
+                    <ul class="types" id="types">
+                        <li><a href="#">ONA</a></li>
+                        <li><a href="#">OVA</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Special</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Seasonal</a>
+                    <ul class="seasonal" id="seasonal">
+                        <li><a href="#" class="side-spring-button">Spring</a></li>
+                        <li><a href="#" class="side-summer-button">Summer</a></li>
+                        <li><a href="#" class="side-fall-button">Fall</a></li>
+                        <li><a href="#" class="side-winter-button">Winter</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">NEW RELEASE</a></li>
                 <li><a href="#">YEAR</a>
                     <ul class="year" id="year">
@@ -43,16 +58,16 @@
             <ul class="header-navigation">
                 <li onclick = showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 <li><h3>Anime<span style="color: rgb(48, 25, 78);">nnce</span></h3></li>
-                <li class="hide"><h3>Year:</h3></li>
-                <li class="hide"><a href="#">2020</a></li>
-                <li class="hide"><a href="#">2021</a></li>
-                <li class="hide"><a href="#">2022</a></li>
-                <li class="hide"><a href="#">2023</a></li>
-                <li class="hide"><a href="#">2024</a></li>
+                <li><h3>Year:</h3></li>
+                <li><a href="#">2020</a></li>
+                <li><a href="#">2021</a></li>
+                <li><a href="#">2022</a></li>
+                <li><a href="#">2023</a></li>
+                <li><a href="#">2024</a></li>
             </ul>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="search.." class="hide">
+            <input type="text" placeholder="search..">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
     </header>
@@ -62,353 +77,841 @@
             <h3>New Release:</h3>
         </div>
         <div class="buttons">
-            <a href="#section-one"><i class="fa-regular fa-circle button button-one"></i></a>
-            <a href="#section-two"><i class="fa-regular fa-circle button button-two"></i></a>
-            <a href="#section-three"><i class="fa-regular fa-circle button button-three"></i></a>
-            <a href="#section-four"><i class="fa-regular fa-circle button button-four"></i></a>
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
-        <section class="section-content-anime">
-            <section class="section-two" id="section-one">
+        <section class="section-content-anime spring-section">
+            <section class="section-two section-spring">
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/kimetsu-no-yaiba.jpg); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Demon Slayer: Kimetsu no Yaiba - To the Hashira Training</p></a>
+                        <p><a href="#">Demon Slayer: Kimetsu no Yaiba - To the Hashira Training</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kaiju\ No.8.jpg); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Kaiju No.8</p></a>
+                        <p><a href="#">Kaiju No.8</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Konosuba\ season\ 3.jpg); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Konosuba Season 3</p></a>
+                        <p><a href="#">Konosuba Season 3</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Mushoku\ Tensei\ II.\ Isekai\ Ittara\ Honki\ Dasu.jpg); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Mushoku Tensei II: Isekai Ittara Honki Dasu</p></a>
+                        <p><a href="#">Mushoku Tensei II: Isekai Ittara Honki Dasu</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/My\ Hero\ Academia\ Season\ 7.jpg); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Boku no Hero Academia 7th Season</p></a>
+                        <p><a href="#">Boku no Hero Academia 7th Season</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/That\ time\ I\ got\ reincarnated\ as\ a\ slime\ Season\ 3.jpg); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Tensei shitara Slime Datta Ken 3rd Season</p></a>
+                        <p><a href="#">Tensei shitara Slime Datta Ken 3rd Season</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Wind\ Breaker.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Wind Breaker</p></a>
+                        <p><a href="#">Wind Breaker</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Ookami\ to\ Koushinryou-\ Merchant\ Meets\ the\ Wise\ Wolf.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Ookami to Koushinryou-Merchant Meets the Wise Wolf</p></a>
+                        <p><a href="#">Ookami to Koushinryou-Merchant Meets the Wise Wolf</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Tensei\ shitara\ Dainana\ Ouji\ Datta\ node\,\ Kimama\ ni\ Majutsu\ wo\ Kiwamemasu.webp); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu</p></a>
+                        <p><a href="#">Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ Misfit\ of\ Demon\ King\ Academy\ II\ Part\ 2.webp); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">The Misfit of Demon King Academia II Part 2</p></a>
+                        <p><a href="#">The Misfit of Demon King Academia II Part 2</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Lv2\ kara\ Cheat\ datta\ Motoyuusha\ Kouho\ no\ Mattari\ Isekai\ Life.webp); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai\ Life</p></a>
+                        <p><a href="#">Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai\ Life</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Maou\ no\ Ore\ ga\ Dorei\ Elf\ wo\ Yome\ ni\ Shitanda\ ga\,\ Dou\ Medereba\ Ii.webp); ">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Maou no Ore ga Dorei Elf wo Yome ni Shitanda ga, Dou Medereba Ii</p></a>
+                        <p><a href="#">Maou no Ore ga Dorei Elf wo Yome ni Shitanda ga, Dou Medereba Ii</a></p>
                     </div>
                 </div>
             </section>
-            <section class="section-two" id="section-two" style="display: none;">
+            <section class="section-two section-spring">
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Sentai\ Daishikkaku.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Sentai Daishikkaku</p></a>
+                        <p><a href="#">Sentai Daishikkaku</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Re-Monster.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Re:Monster</p></a>
+                        <p><a href="#">Re:Monster</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Mahouka\ Koukou\ no\ Rettousei\ 3rd\ Season.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Mahouka Koukou no Rettousei 3rd Season</p></a>
+                        <p><a href="#">Mahouka Koukou no Rettousei 3rd Season</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Jiisan\ Baasan\ Wakagaeru.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Jiisan Baasan Wakagaeru</p></a>
+                        <p><a href="#">Jiisan Baasan Wakagaeru</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Tensei\ Kizoku\,\ Kantei\ Skill\ de\ Nariagaru.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Tensei Kizoku, Kantei Skill de Nariagaru</p></a>
+                        <p><a href="#">Tensei Kizoku, Kantei Skill de Nariagaru</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Unnamed\ Memory.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Unnamed Memory</p></a>
+                        <p><a href="#">Unnamed Memory</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Date\ A\ Live\ V.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Date A Live V</p></a>
+                        <p><a href="#">Date A Live V</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Yoru\ no\ Kurage\ wa\ Oyogenai.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Yoru no Kurage wa Oyogenai</p></a>
+                        <p><a href="#">Yoru no Kurage wa Oyogenai</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Bartender-Kami\ no\ Glass.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Bartender-Kami no Glass</p></a>
+                        <p><a href="#">Bartender-Kami no Glass</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Hananoi-kun\ to\ Koi\ no\ Yamai.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Hananoi-kun to Koi no Yamai</p></a>
+                        <p><a href="#">Hananoi-kun to Koi no Yamai</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ New\ Gate.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">The New Gate</p></a>
+                        <p><a href="#">The New Gate</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
                     <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Yozakura-san\ Chi\ no\ Daisakusen.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#">Yozakura-san Chi no Daisakusen</p></a>
+                        <p><a href="#">Yozakura-san Chi no Daisakusen</a></p>
                     </div>
                 </div>
             </section>
-            <section class="section-two" id="section-three" style="display: none;">
+            <section class="section-two section-spring">
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Yuru\ Camp\ Season\ 3.jpg);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Yuru Camp△ Season 3</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Sasayaku\ You\ ni\ Koi\ wo\ Utau.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Sasayaku You ni Koi wo Utau</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kaii\ to\ Otome\ to\ Kamikakushi.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Kaii to Otome to Kamikakushi</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kuroshitsuji-Kishuku\ Gakkou-hen.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Kaii to Otome to Kamikakushi</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kami\ wa\ Game\ ni\ Ueteiru..webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Kami wa Game ni Ueteiru.</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Girls\ Band\ Cry.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Girls Band Cry</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Hibike!\ Euphonium\ 3.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Hibike! Euphonium 3</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ Banished\ Former\ Hero\ Lives\ as\ He\ Pleases.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">The Banished Former Hero Lives as He Pleases</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shuumatsu\ Train\ Doko\ e\ Iku.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Shuumatsu Train Doko e Iku</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kenka\ Dokugaku.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Kenka Dokugaku</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/One\ Room\,\ Hiatari\ Futsuu\,\ Tenshi-tsuki..webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">One Room, Hiatari Futsuu, Tenshi-tsuki.</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Blue\ Archive\ the\ Animation.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Blue Archive the Animation</a></p>
                     </div>
                 </div>
             </section>
-            <section class="section-two" id="section-four" style="display: none;">
+            <section class="section-two section-spring">
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Henjin\ no\ Salad\ Bowl.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Henjin no Salad Bowl</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ Fable.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">The Fable</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Seiyuu\ Radio\ no\ Uraomote.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Seiyuu Radio no Uraomote</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shinigami\ Bocchan\ to\ Kuro\ Maid\ 3rd\ Season.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Shinigami Bocchan to Kuro Maid 3rd Season</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Vampire\ Dormitory.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Vampire Dormitory</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Tadaima\,\ Okaeri.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Tadaima, Okaeri</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Boukyaku\ Battery\ \(TV\).webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Boukyaku Battery (TV)</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Karasu\ wa\ Aruji\ wo\ Erabanai.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Karasu wa Aruji wo Erabanai</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Astro\ Note.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Astro Note</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Tonari\ no\ Youkai-san.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Tonari no Youkai-san</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Highspeed\ Etoile.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Highspeed Etoile</a></p>
                     </div>
                 </div>
                 <div class="anime-container">
-                    <div class="image-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Touken\ Ranbu\ Kai-\ Kyoden\ Moyuru\ Honnouji.webp);">
                     </div>
                     <div class="title-container">
-                        <p><a href="#"></p></a>
+                        <p><a href="#">Touken Ranbu Kai- Kyoden Moyuru Honnouji</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-two section-spring">
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Ooi!\ Tonbo.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Ooi! Tonbo</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ iDOLM@STER\ Shiny\ Colors.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">The iDOLM@STER Shiny Colors</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Rinkai!.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Rinkai!</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Nijiyon\ Animation\ 2.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Nijiyon Animation 2</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Himitsu\ no\ AiPri.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Himitsu no AiPri</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shadowverse\ Flame-\ Arc-hen.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Shadowverse Flame- Arc-hen</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shibuya♡Hachi.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Shibuya♡Hachi</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/YouTuNya\ 2nd\ Season.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">YouTuNya 2nd Season</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Ageo\ to\ Tim.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Ageo to Tim</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Nyaaaanvy.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Nyaaaanvy</a></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section-content-anime summer-section" style="display: none;">
+            <section class="section-two section-summer">
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Oshi\ no\ ko\ 2nd\ Season.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Oshi no ko 2nd Season</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Tokidoki\ Bosotto\ Russia-go\ de\ Dereru\ Tonari\ no\ Alya-san.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Kami\ no\ Tou\ Ouji\ no\ Kikan.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Kami no Tou: Ouji no Kikan</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Shikanoko\ Nokonoko\ Koshitantan.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Shikanoko Nokonoko Koshitantan</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Fairy\ Tail\ 100\ nen\ Quest.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Fairy Tail: 100-nen Quest</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Isekai\ Suicide\ Squad.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Isekai Suicide Squad</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Tsue\ to\ Tsurugi\ no\ Wistoria.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Tsue to Tsurugi no Wistoria</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Gimai\ Seikatsu.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Gimai Seikatsu</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Isekai\ Shikkaku.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Isekai Shikkaku</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Giji\ Harem.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Giji Harem</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Make\ Heroine\ ga\ Oosugiru!.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Make Heroine ga Oosugiru!</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Summer/Failure\ Frame-\ I\ Became\ the\ Strongest\ and\ Annihilated\ Everything\ With\ Low-Level\ Spells.webp); ">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Failure Frame: I Became the Strongest and Annihilated Everything With Low-Level Spells</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-two section-summer">
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Sentai\ Daishikkaku.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Sentai Daishikkaku</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Re-Monster.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Re:Monster</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Mahouka\ Koukou\ no\ Rettousei\ 3rd\ Season.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Mahouka Koukou no Rettousei 3rd Season</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Jiisan\ Baasan\ Wakagaeru.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Jiisan Baasan Wakagaeru</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Tensei\ Kizoku\,\ Kantei\ Skill\ de\ Nariagaru.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Tensei Kizoku, Kantei Skill de Nariagaru</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Unnamed\ Memory.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Unnamed Memory</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Date\ A\ Live\ V.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Date A Live V</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Yoru\ no\ Kurage\ wa\ Oyogenai.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Yoru no Kurage wa Oyogenai</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Bartender-Kami\ no\ Glass.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Bartender-Kami no Glass</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Hananoi-kun\ to\ Koi\ no\ Yamai.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Hananoi-kun to Koi no Yamai</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ New\ Gate.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">The New Gate</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Yozakura-san\ Chi\ no\ Daisakusen.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Yozakura-san Chi no Daisakusen</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-two section-summer">
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Yuru\ Camp\ Season\ 3.jpg);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Yuru Camp△ Season 3</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Sasayaku\ You\ ni\ Koi\ wo\ Utau.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Sasayaku You ni Koi wo Utau</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kaii\ to\ Otome\ to\ Kamikakushi.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Kaii to Otome to Kamikakushi</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kuroshitsuji-Kishuku\ Gakkou-hen.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Kaii to Otome to Kamikakushi</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kami\ wa\ Game\ ni\ Ueteiru..webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Kami wa Game ni Ueteiru.</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Girls\ Band\ Cry.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Girls Band Cry</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Hibike!\ Euphonium\ 3.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Hibike! Euphonium 3</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ Banished\ Former\ Hero\ Lives\ as\ He\ Pleases.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">The Banished Former Hero Lives as He Pleases</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shuumatsu\ Train\ Doko\ e\ Iku.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Shuumatsu Train Doko e Iku</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Kenka\ Dokugaku.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Kenka Dokugaku</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/One\ Room\,\ Hiatari\ Futsuu\,\ Tenshi-tsuki..webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">One Room, Hiatari Futsuu, Tenshi-tsuki.</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Blue\ Archive\ the\ Animation.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Blue Archive the Animation</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-two section-summer">
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Henjin\ no\ Salad\ Bowl.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Henjin no Salad Bowl</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ Fable.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">The Fable</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Seiyuu\ Radio\ no\ Uraomote.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Seiyuu Radio no Uraomote</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shinigami\ Bocchan\ to\ Kuro\ Maid\ 3rd\ Season.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Shinigami Bocchan to Kuro Maid 3rd Season</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Vampire\ Dormitory.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Vampire Dormitory</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Tadaima\,\ Okaeri.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Tadaima, Okaeri</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Boukyaku\ Battery\ \(TV\).webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Boukyaku Battery (TV)</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Karasu\ wa\ Aruji\ wo\ Erabanai.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Karasu wa Aruji wo Erabanai</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Astro\ Note.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Astro Note</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Tonari\ no\ Youkai-san.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Tonari no Youkai-san</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Highspeed\ Etoile.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Highspeed Etoile</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Touken\ Ranbu\ Kai-\ Kyoden\ Moyuru\ Honnouji.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Touken Ranbu Kai- Kyoden Moyuru Honnouji</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-two section-summer">
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Ooi!\ Tonbo.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Ooi! Tonbo</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/The\ iDOLM@STER\ Shiny\ Colors.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">The iDOLM@STER Shiny Colors</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Rinkai!.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Rinkai!</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Nijiyon\ Animation\ 2.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Nijiyon Animation 2</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Himitsu\ no\ AiPri.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Himitsu no AiPri</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shadowverse\ Flame-\ Arc-hen.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Shadowverse Flame- Arc-hen</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Shibuya♡Hachi.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Shibuya♡Hachi</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/YouTuNya\ 2nd\ Season.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">YouTuNya 2nd Season</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Ageo\ to\ Tim.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Ageo to Tim</a></p>
+                    </div>
+                </div>
+                <div class="anime-container">
+                    <div class="image-container" style="background-image: url(animeimage/2024-anime/2024-Spring/Nyaaaanvy.webp);">
+                    </div>
+                    <div class="title-container">
+                        <p><a href="#">Nyaaaanvy</a></p>
                     </div>
                 </div>
             </section>
@@ -416,10 +919,10 @@
         <aside class="section-seasonal hide">
             <ul>
                 <li><h3>Season:</h3></li>
-                <li><a href="#">Spring</a></li>
-                <li><a href="#">Summer</a></li>
-                <li><a href="#">Fall</a></li>
-                <li><a href="#">Winter</a></li>
+                <li><a href="#" class="button spring">Spring</a></li>
+                <li><a href="#" class="button summer">Summer</a></li>
+                <li><a href="#" class="button fall">Fall</a></li>
+                <li><a href="#" class="button winter">Winter</a></li>
             </ul>
             <ul>
                 <li><h3>Types:</h3></li>
@@ -429,9 +932,9 @@
                 <li><a href="#">SPECIAL</a></li>
             </ul>
         </aside>
-        <aside class="section-list hide">
+        <aside class="section-list">
             <ul>
-                <li><h3>This year's List:</h3></li>
+                <li><h3>Ongoing Anime's:</h3></li>
                 <li class="top-image-container">
                     <img src="animeimage/2024-anime/2024-Spring/kimetsu-no-yaiba.jpg" alt="">
                     <a href="#">Kimetsu no yaiba: Hashira Training Arc</a>
