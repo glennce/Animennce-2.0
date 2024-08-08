@@ -1,0 +1,208 @@
+.main-content{
+    width: 1200px;
+    height: fit-content;
+    background: linear-gradient(to top, rgb(41, 41, 41), rgb(86, 86, 86));
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 10vh);
+    grid-auto-rows: 120px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.title{
+    grid-column: span 3;
+    display: flex;
+    align-items: flex-end;
+}
+
+.buttons{
+    grid-column: 4/6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.buttons i{
+    font-size: .8rem;
+    transition: all .5s;
+}
+
+.buttons i:hover{
+    color: red;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.title h3{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.section-anime-content, .section-two{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.section-content-anime{ 
+    grid-column: span 8;
+    grid-row: span 8;
+}
+
+.anime-container{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.title-container{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 15%;
+    overflow: auto;
+}
+
+.title-container a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    transition: all .5s;
+    margin-left: 10px;
+}
+
+.title-container a:hover{
+    text-decoration: underline;
+    text-shadow: 4px 2px 4px white;
+}
+
+.image-container{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    position: relative;
+}
+
+.image{
+    position: relative;
+    border-radius: 5px;
+}
+
+.anime-container:hover .image-container{
+    transform: scale(1.2);
+    opacity: .8;
+}
+
+.section-seasonal{
+    grid-column: span 4;
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background: linear-gradient(to top, rgb(41, 41, 41), rgb(86, 86, 86));
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.active{
+    background-color: red;
+    border-radius: 50px;
+}
+
+.show{
+    display: grid;
+}
+
+.section-seasonal ul{
+    margin: 20px;
+}
+
+.section-seasonal li{
+    margin: 15px;
+}
+
+.section-seasonal h3{
+    font-size: 2rem;
+}
+
+.section-seasonal a{
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.section-seasonal a:hover{
+    color: red;
+}
+
+.section-list{
+    grid-column: span 4;
+    grid-row: span 6;
+    margin: 10px;
+}
+
+.section-list ul{
+    background: linear-gradient(to top, rgb(41, 41, 41), rgb(86, 86, 86));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    overflow: auto;
+    gap: 10px;
+}
+
+.section-list h3{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.section-list li{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.section-list a{
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.section-list a:hover{
+    color: red;
+}
+
+.section-list li img{
+    width: 25%;
+    height: 90%;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.top-image-container{
+    border-radius: 10px;
+}
