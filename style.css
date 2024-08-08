@@ -109,7 +109,34 @@ body{
     transition: all .5s;
 }
 
-li:hover ul#year, li:hover ul#genres{
+.types{
+    position: absolute;
+    left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+    border-radius: 10px;
+     background: linear-gradient(to top, rgb(41, 41, 41), rgb(86, 86, 86));
+    
+}
+
+.seasonal{
+    position: absolute;
+    left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+    visibility: hidden;
+    border-radius: 10px;
+     background: linear-gradient(to top, rgb(41, 41, 41), rgb(86, 86, 86));
+}
+
+li:hover ul#year, li:hover ul#genres, li:hover ul#types, li:hover ul#seasonal{
     visibility: visible;
     opacity: 1;
 }
@@ -154,6 +181,7 @@ li:hover ul#year, li:hover ul#genres{
     justify-content: flex-start;
     margin: 0 auto;
     padding: 0 auto;
+    margin-top: 10px;
 }
 
 .main-footer i{
