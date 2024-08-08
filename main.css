@@ -24,15 +24,18 @@
     margin-bottom: 10px;
 }
 
-.buttons i{
-    font-size: .8rem;
+.buttons button{
+    border-radius: 10px;
     transition: all .5s;
 }
 
-.buttons i:hover{
-    color: red;
-    background-color: red;
-    border-radius: 50px;
+.buttons i{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.buttons button:hover{
+    background-color: rgb(154, 27, 27);
 }
 
 .title h3{
@@ -50,10 +53,11 @@
     gap: 10px;
 }
 
-
 .section-content-anime{ 
     grid-column: span 8;
     grid-row: span 8;
+    overflow: hidden;
+    display: block;
 }
 
 .anime-container{
@@ -77,7 +81,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: black;
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
     justify-content: flex-start;
     font-size: 1rem;
@@ -121,12 +125,7 @@
 }
 
 .active{
-    background-color: red;
-    border-radius: 50px;
-}
-
-.show{
-    display: grid;
+    color: red;
 }
 
 .section-seasonal ul{
