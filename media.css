@@ -4,8 +4,8 @@
     }
     .main-content{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 10vh);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-auto-rows: 150px;
         overflow: hidden;
         height: fit-content;
@@ -17,15 +17,31 @@
 
     .buttons{
         grid-column: 2;
+        gap: 30px;
+        margin-right: 20px;
     }
 
     .section-content-anime{
         grid-area: 2/1/15/5;
     }
 
-    .section-anime-content.section-two{
+    .section-anime-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-two{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .section-list{
+        height: 1000px;
+        width: fit-content;
+    }
+
+    .section-list a, .section-list h3{
+        font-size: 2rem;
     }
 }
