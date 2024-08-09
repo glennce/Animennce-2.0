@@ -27,6 +27,7 @@
 .buttons button{
     border-radius: 10px;
     transition: all .5s;
+    cursor: pointer;
 }
 
 .buttons i{
@@ -44,7 +45,7 @@
     margin-bottom: 10px;
 }
 
-.section-anime-content, .section-two{
+.section-two{
     width: 100%;
     height: 100%;
     display: grid;
